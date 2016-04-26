@@ -1,0 +1,45 @@
+== README
+
+In order to get the application ruinning, you'll need:
+
+ - Ruby version 2.1.5 or greater
+  - To test Ruby version on Windows or Unix (OSX): `ruby -v`
+ - Try to use RVM for the lastest stable Ruby distro.
+ - Make sure to have the following installed:
+  - Rails (http://rubyonrails.org)
+  - SASS (for .scss) (http://sass-lang.com)
+  - Bootstrap (http://getbootstrap.com)
+ - In order to run the test suite:
+  - On Windows:
+   - `cd C:\...\closeUps\`*
+   - `rails server`
+  - On Unix (OSX):
+   - `cd /.../closeUps/`**
+   - `rails s`
+ - For deployment, make sure you have the latest:
+  - Browser
+
+* Where `...` represents the path between `C:\` (or local disk) and `\closeUps\`
+** Where `...` represents the path between `/` (or root) and `/closeUps/`
+
+Credits:
+ - `favicon.ico`: https://upload.wikimedia.org/wikipedia/en/7/71/The_Wilds_(conservation_center)_logo.jpg
+ - Columbus Zoo: https://c1.staticflickr.com/3/2507/4145946453_ae814573f4_b.jpg
+ - Newport Aquarium: https://www.newportonthelevee.com/Portals/newportonthelevee/Images/Directory/Embedded/Gift-Shop.jpg
+ - Cincinnati Zoo: http://schaefer-inc.com/wp-content/uploads/2013/04/cincinnati-zoo-02.jpg
+
+All animals shot with Sony NEX-3K on either 18-55mm (27-82mm equiv.) or 55-210mm (82-315mm equiv.) E Mount lens.
+
+This project:
+ - Required:
+  - Ruby
+  - HTML
+
+ - Taught me:
+  - Correct implementation of .svg into HTML
+  - Usage of .scss
+
+ - Strengthened knowledge of:
+  - Rails
+  - CSS
+  - Bootstrap

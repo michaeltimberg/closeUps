@@ -1,0 +1,277 @@
+// Custom bootstrap variables must be set or import before bootstrap itself.
+@import "bootstrap";
+
+@font-face {
+    font-family: 'Knockout';
+    src: url('/assets/Knockout-HTF48-Featherweight.otf');
+}
+
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+/* Header */
+
+html, body {
+  margin: 0;
+  background-color: #8CF8FA;
+}
+
+#header {
+  color: #8CF8FA;
+  background-color: #FFFFFF;
+  height: 10%;
+  margin: 0;
+  padding: 0;
+}
+
+a h1 {
+  width: 40%;
+}
+
+h1 {
+  margin-top: 1%;
+  margin-left: 32%;
+  transition: color 1s;
+  font-family: 'Knockout';
+  font-size: 6em;
+  color: #8CF8FA;
+}
+
+h1 strong {
+  font-size: 1.5em;
+}
+
+h1:hover {
+  color: #F4AECF;
+  transition: color 0.25s;
+}
+
+li {
+  list-style: none;
+}
+
+svg #email,
+svg #github,
+svg #linkedin {
+  transition: 200ms;
+  transition-timing-function: ease-in-out;
+  -webkit-transition: 200ms;
+  -webkit-transition-timing-function: ease-in-out;
+}
+
+.svgHover {
+  margin-top: 2%;
+  margin-right: 1%;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  background-color: #FFFFFF;
+  transition: background-color 1s;
+}
+
+.svgHover:hover {
+  background-color: #F4AECF;
+  transition: background-color 0.25s;
+}
+
+.svgHover a:hover,
+a h1:hover {
+  background-color: transparent;
+}
+
+svg {
+  position: absolute;
+  right: 0;
+  fill: #8CF8FA;
+}
+
+svg:hover #email,
+svg:hover #github,
+svg:hover #linkedin {
+  fill: #FFFFFF;
+}
+
+#lIH {
+  border-radius: 7.5%;
+}
+
+/* Body */
+
+.trips, .photo {
+  padding: 0 20px 0;
+  margin: 40px 0;
+}
+
+.container h1,
+.container h3 {
+  margin: 1% 0;
+  color: #FFFFFF;
+  font-size: 1.9em;
+}
+
+.card {
+  border: none;
+  display: block;
+  margin: 4px 0;
+  background-color: #8CF8FA;
+}
+
+.trips .card h3 {
+  position: absolute;
+  left: 0;
+  right: 0;
+  text-align: center;
+  top: 25%;
+}
+
+.trips img,
+.trip img,
+.photos img,
+.photo img {
+  display:block;
+  width:100%;
+  max-width:100%;
+  height:auto;
+  padding: 4px;
+  border: 2px solid #FFFFFF;
+}
+
+.trip .card p {
+  font-size: 14px;
+  font-weight: 300;
+  -webkit-box-orient: vertical;
+  padding: 0 20px 20px;
+}
+
+.photo p {
+  color: #0f0f0f;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.card a,
+.photo a,
+.photo .btn {
+  border-radius: 5px;
+  background-color: #8CF8FA;
+  color: #F4AECF;
+  font-size: 1.25em;
+  font-weight: 600;
+  text-align: center;
+  transition: color 1s;
+  transition: background-color 1s;
+  border: 2px solid #F4AECF;
+  padding: 6px 30px;
+  display: inline-block;
+  cursor: pointer;
+  margin: 8px 0 20px;
+}
+
+a:hover,
+.btn:hover {
+  color: #FFFFFF;
+  text-decoration: none;
+  background-color: #F4AECF;
+  transition: color 0.25s;
+  transition: background-color 0.25s;
+}
+
+a:link,
+a:visited,
+.btn:link,
+.btn:visited {
+  text-decoration: none;
+}
+
+.inline {
+  padding: 0;
+}
+
+.inline-left {
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.inline-left h3 {
+  padding: 5px;
+}
+
+.inline-right {
+  margin: 0;
+  padding: 0;
+}
+
+.copy {
+  display: inline;
+}
+
+p {
+  color: #FFFFFF;
+  font-size: 0.75em;
+}
+
+#copy {
+  font-size: 2.5em;
+  vertical-align: middle;
+}
+
+/* Photo Show */
+
+.jumbotron {
+  border: none;
+  padding: none;
+  background-color: #8CF8FA;
+}
+
+.jumbotron img {
+  border: none;
+  padding: 0;
+  margin: 5% auto -5% auto;
+  height: auto;
+  width: 90%;
+  border-radius: 0.5%;
+}
+
+/* Photo Edit */
+
+.photo form {
+  margin: 20px;
+}
+
+form label,
+#editBack {
+  width: calc(100% - 40px);
+}
+
+form input {
+  border: 1px solid #d6d6d6;
+  font-family: 'Roboto', sans-serif;
+  margin: 10px 0;
+  padding: 20px;
+  width: calc(100% - 40px);
+}
+
+input:focus {
+  border: 1px solid #003ec9;
+  font-size: 14px;
+  font-weight: 300;
+  box-shadow: 0;
+  outline: 0;
+  transition: border 1s;
+}
