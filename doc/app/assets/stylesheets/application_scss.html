@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="UTF-8">
+
+<title>application.scss - RDoc Documentation</title>
+
+<script type="text/javascript">
+  var rdoc_rel_prefix = "../../../";
+</script>
+
+<script src="../../../js/jquery.js"></script>
+<script src="../../../js/darkfish.js"></script>
+
+<link href="../../../css/fonts.css" rel="stylesheet">
+<link href="../../../css/rdoc.css" rel="stylesheet">
+
+
+
+<body id="top" role="document" class="file">
+<nav role="navigation">
+  <div id="project-navigation">
+    <div id="home-section" role="region" title="Quick navigation" class="nav-section">
+  <h2>
+    <a href="../../../index.html" rel="home">Home</a>
+  </h2>
+
+  <div id="table-of-contents-navigation">
+    <a href="../../../table_of_contents.html#pages">Pages</a>
+    <a href="../../../table_of_contents.html#classes">Classes</a>
+    <a href="../../../table_of_contents.html#methods">Methods</a>
+  </div>
+</div>
+
+    <div id="search-section" role="search" class="project-section initially-hidden">
+  <form action="#" method="get" accept-charset="utf-8">
+    <div id="search-field-wrapper">
+      <input id="search-field" role="combobox" aria-label="Search"
+             aria-autocomplete="list" aria-controls="search-results"
+             type="text" name="search" placeholder="Search" spellcheck="false"
+             title="Type to search, Up and Down to navigate, Enter to load">
+    </div>
+
+    <ul id="search-results" aria-label="Search Results"
+        aria-busy="false" aria-expanded="false"
+        aria-atomic="false" class="initially-hidden"></ul>
+  </form>
+</div>
+
+  </div>
+
+  
+
+  <div id="project-metadata">
+    <div id="fileindex-section" class="nav-section">
+  <h3>Pages</h3>
+
+  <ul class="link-list">
+  
+    <li><a href="../../../Gemfile.html">Gemfile</a>
+  
+    <li><a href="../../../Gemfile_lock.html">Gemfile.lock</a>
+  
+    <li><a href="../../../README_rdoc.html">README</a>
+  
+    <li><a href="../../../Rakefile.html">Rakefile</a>
+  
+    <li><a href="../../../app/assets/images/e-mail-sign_svg.html">e-mail-sign.svg</a>
+  
+    <li><a href="../../../app/assets/images/email_svg.html">email.svg</a>
+  
+    <li><a href="../../../app/assets/images/emailTwo_svg.html">emailTwo.svg</a>
+  
+    <li><a href="../../../app/assets/images/github_svg.html">github.svg</a>
+  
+    <li><a href="../../../app/assets/images/linkedin_svg.html">linkedin.svg</a>
+  
+    <li><a href="../../../app/assets/javascripts/application_js.html">application.js</a>
+  
+    <li><a href="../../../app/assets/javascripts/photos_coffee.html">photos.coffee</a>
+  
+    <li><a href="../../../app/assets/javascripts/trips_coffee.html">trips.coffee</a>
+  
+    <li><a href="../../../app/assets/stylesheets/application_scss.html">application.scss</a>
+  
+    <li><a href="../../../app/assets/stylesheets/photos_scss.html">photos.scss</a>
+  
+    <li><a href="../../../app/assets/stylesheets/trips_scss.html">trips.scss</a>
+  
+    <li><a href="../../../config_ru.html">config.ru</a>
+  
+    <li><a href="../../../db/test_sqlite3.html">test.sqlite3</a>
+  
+    <li><a href="../../../log/development_log.html">development.log</a>
+  
+    <li><a href="../../../public/404_html.html">404.html</a>
+  
+    <li><a href="../../../public/422_html.html">422.html</a>
+  
+    <li><a href="../../../public/500_html.html">500.html</a>
+  
+    <li><a href="../../../public/robots_txt.html">robots</a>
+  
+  </ul>
+</div>
+
+  </div>
+</nav>
+
+<main role="main" aria-label="Page app/assets/stylesheets/application.scss">
+
+<p>// Custom bootstrap variables must be set or import before bootstrap
+itself. @import “bootstrap”;</p>
+
+<p>@font-face {</p>
+
+<pre>font-family: &#39;Knockout&#39;;
+src: url(&#39;/assets/Knockout-HTF48-Featherweight.otf&#39;);</pre>
+
+<p>}</p>
+
+<pre> This is a manifest file that&#39;ll be compiled into application.css, which will include all the files
+ listed below.
+
+ Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ or any plugin&#39;s vendor/assets/stylesheets directory can be referenced here using a relative path.
+
+ You&#39;re free to add application-wide styles to this file and they&#39;ll appear at the bottom of the
+ compiled file so the styles you add here take precedence over styles defined in any styles
+ defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ file per style scope.
+
+= require_tree .
+= require_self
+
+ Header</pre>
+
+<p>html, body {</p>
+
+<pre>margin: 0;
+background-color: #8CF8FA;</pre>
+
+<p>}</p>
+
+<p>header {</p>
+
+<pre>color: #8CF8FA;
+background-color: #FFFFFF;
+height: 10%;
+margin: 0;
+padding: 0;</pre>
+
+<p>}</p>
+
+<p>a h1 {</p>
+
+<pre>width: 40%;</pre>
+
+<p>}</p>
+
+<p>h1 {</p>
+
+<pre>margin-top: 1%;
+margin-left: 32%;
+transition: color 1s;
+font-family: &#39;Knockout&#39;;
+font-size: 6em;
+color: #8CF8FA;</pre>
+
+<p>}</p>
+
+<p>h1 strong {</p>
+
+<pre>font-size: 1.5em;</pre>
+
+<p>}</p>
+
+<p>h1:hover {</p>
+
+<pre>color: #F4AECF;
+transition: color 0.25s;</pre>
+
+<p>}</p>
+
+<p>li {</p>
+
+<pre>list-style: none;</pre>
+
+<p>}</p>
+
+<p>svg email, svg github, svg linkedin {</p>
+
+<pre>transition: 200ms;
+transition-timing-function: ease-in-out;
+-webkit-transition: 200ms;
+-webkit-transition-timing-function: ease-in-out;</pre>
+
+<p>}</p>
+
+<p>.svgHover {</p>
+
+<pre>margin-top: 2%;
+margin-right: 1%;
+width: 50px;
+height: 50px;
+border-radius: 100%;
+background-color: #FFFFFF;
+transition: background-color 1s;</pre>
+
+<p>}</p>
+
+<p>.svgHover:hover {</p>
+
+<pre>background-color: #F4AECF;
+transition: background-color 0.25s;</pre>
+
+<p>}</p>
+
+<p>.svgHover a:hover, a h1:hover {</p>
+
+<pre>background-color: transparent;</pre>
+
+<p>}</p>
+
+<p>svg {</p>
+
+<pre>position: absolute;
+right: 0;
+fill: #8CF8FA;</pre>
+
+<p>}</p>
+
+<p>svg:hover email, svg:hover github, svg:hover linkedin {</p>
+
+<pre>fill: #FFFFFF;</pre>
+
+<p>}</p>
+
+<p>lIH {</p>
+
+<pre>border-radius: 7.5%;</pre>
+
+<p>}</p>
+
+<p>/* Body */</p>
+
+<p>.trips, .photo {</p>
+
+<pre>padding: 0 20px 0;
+margin: 40px 0;</pre>
+
+<p>}</p>
+
+<p>.container h1, .container h3 {</p>
+
+<pre>margin: 1% 0;
+color: #FFFFFF;
+font-size: 1.9em;</pre>
+
+<p>}</p>
+
+<p>.card {</p>
+
+<pre>border: none;
+display: block;
+margin: 4px 0;
+background-color: #8CF8FA;</pre>
+
+<p>}</p>
+
+<p>.trips .card h3 {</p>
+
+<pre>position: absolute;
+left: 0;
+right: 0;
+text-align: center;
+top: 25%;</pre>
+
+<p>}</p>
+
+<p>.trips img, .trip img, .photos img, .photo img {</p>
+
+<pre>display:block;
+width:100%;
+max-width:100%;
+height:auto;
+padding: 4px;
+border: 2px solid #FFFFFF;</pre>
+
+<p>}</p>
+
+<p>.trip .card p {</p>
+
+<pre>font-size: 14px;
+font-weight: 300;
+-webkit-box-orient: vertical;
+padding: 0 20px 20px;</pre>
+
+<p>}</p>
+
+<p>.photo p {</p>
+
+<pre>color: #0f0f0f;
+font-size: 14px;
+font-weight: 300;</pre>
+
+<p>}</p>
+
+<p>.card a, .photo a, .photo .btn {</p>
+
+<pre>border-radius: 5px;
+background-color: #8CF8FA;
+color: #F4AECF;
+font-size: 1.25em;
+font-weight: 600;
+text-align: center;
+transition: color 1s;
+transition: background-color 1s;
+border: 2px solid #F4AECF;
+padding: 6px 30px;
+display: inline-block;
+cursor: pointer;
+margin: 8px 0 20px;</pre>
+
+<p>}</p>
+
+<p>a:hover, .btn:hover {</p>
+
+<pre>color: #FFFFFF;
+text-decoration: none;
+background-color: #F4AECF;
+transition: color 0.25s;
+transition: background-color 0.25s;</pre>
+
+<p>}</p>
+
+<p>a:link, a:visited, .btn:link, .btn:visited {</p>
+
+<pre>text-decoration: none;</pre>
+
+<p>}</p>
+
+<p>.inline {</p>
+
+<pre>padding: 0;</pre>
+
+<p>}</p>
+
+<p>.inline-left {</p>
+
+<pre>margin: 0;
+padding: 0;
+text-align: left;
+overflow: hidden;
+white-space: nowrap;</pre>
+
+<p>}</p>
+
+<p>.inline-left h3 {</p>
+
+<pre>padding: 5px;</pre>
+
+<p>}</p>
+
+<p>.inline-right {</p>
+
+<pre>margin: 0;
+padding: 0;</pre>
+
+<p>}</p>
+
+<p>.copy {</p>
+
+<pre>display: inline;</pre>
+
+<p>}</p>
+
+<p>p {</p>
+
+<pre>color: #FFFFFF;
+font-size: 0.75em;</pre>
+
+<p>}</p>
+
+<p>copy {</p>
+
+<pre>font-size: 2.5em;
+vertical-align: middle;</pre>
+
+<p>}</p>
+
+<p>/* <a href="../../../Photo.html">Photo</a> Show */</p>
+
+<p>.jumbotron {</p>
+
+<pre>border: none;
+padding: none;
+background-color: #8CF8FA;</pre>
+
+<p>}</p>
+
+<p>.jumbotron img {</p>
+
+<pre>border: none;
+padding: 0;
+margin: 5% auto -5% auto;
+height: auto;
+width: 90%;
+border-radius: 0.5%;</pre>
+
+<p>}</p>
+
+<p>/* <a href="../../../Photo.html">Photo</a> Edit */</p>
+
+<p>.photo form {</p>
+
+<pre>margin: 20px;</pre>
+
+<p>}</p>
+
+<p>form label, editBack {</p>
+
+<pre>width: calc(100% - 40px);</pre>
+
+<p>}</p>
+
+<p>form input {</p>
+
+<pre>border: 1px solid #d6d6d6;
+font-family: &#39;Roboto&#39;, sans-serif;
+margin: 10px 0;
+padding: 20px;
+width: calc(100% - 40px);</pre>
+
+<p>}</p>
+
+<p>input:focus {</p>
+
+<pre>border: 1px solid #003ec9;
+font-size: 14px;
+font-weight: 300;
+box-shadow: 0;
+outline: 0;
+transition: border 1s;</pre>
+
+<p>}</p>
+</main>
+
+
+
+<footer id="validator-badges" role="contentinfo">
+  <p><a href="http://validator.w3.org/check/referer">Validate</a>
+  <p>Generated by <a href="http://docs.seattlerb.org/rdoc/">RDoc</a> 4.2.2.
+  <p>Based on <a href="http://deveiate.org/projects/Darkfish-RDoc/">Darkfish</a> by <a href="http://deveiate.org">Michael Granger</a>.
+</footer>
+
