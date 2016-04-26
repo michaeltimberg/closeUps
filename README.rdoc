@@ -19,7 +19,7 @@
 * For deployment, make sure you have the latest:
   *  Browser
 
-[*]  Where <tt>...</tt> represents the path between <tt>C:\\</tt> (or local disk) and <tt>\closeUps</tt>
+[*]  Where <tt>\...</tt> represents the path between <tt>C:</tt> (or local disk) and <tt>\closeUps</tt>
 [**]  Where <tt>...</tt> represents the path between <tt>/</tt> (or root) and <tt>/closeUps/</tt>
 
 === Credits:
